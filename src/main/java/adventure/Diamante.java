@@ -1,7 +1,6 @@
 
 package adventure;
 
-
 public class Diamante {
 
     private Integer quantidade;

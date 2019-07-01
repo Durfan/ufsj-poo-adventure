@@ -1,3 +1,4 @@
+
 package adventure;
 
 class Porta extends Sala {
