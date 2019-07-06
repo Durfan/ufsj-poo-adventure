@@ -38,16 +38,20 @@ class Stash {
         
      	this.chave = new Chave();
         
-        if(rand.nextFloat() < 0.5) {
-        	int aux = rand.nextInt(3);
-        	if(aux == 0) {
-        		chave.setNome("A");
-        	}else if(aux == 1) {
-        		chave.setNome("B");
-        	}else {
-        		chave.setNome("C");
-        	}        	
-        	chave.setAlcansavel(false);
+        if (rand.nextFloat() < 0.5) {
+            int aux = rand.nextInt(3);
+            switch (aux) {
+                case 0:
+                    chave.setNome("A");
+                    break;
+                case 1:
+                    chave.setNome("B");
+                    break;
+                default:
+                    chave.setNome("C");
+                    break;        	
+            }
+            chave.setAlcansavel(false);
         }
     }
 

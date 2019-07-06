@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 public class Game extends javax.swing.JFrame {
     
-    private static final Map map = new Map();
+    private static final Map MAP = new Map();
     private static Sala salatual;
     private static Player player;
 
@@ -380,7 +380,7 @@ public class Game extends javax.swing.JFrame {
             case "A": case "B": case "C":
                 Sala from = salatual;
                 salatual = salatual.moveTo(from,args, player);
-                map.movimentaTrolls();
+                MAP.movimentaTrolls();
                 infoArea.append(txCursor + prompt.getText() + salatual.moveToSTR(from, args, player)+ "\n");
             break;
             case "gold":

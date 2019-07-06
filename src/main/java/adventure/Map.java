@@ -138,7 +138,7 @@ public class Map {
         	for(int j = 0; j < portas.size(); j++) {
         		if(rand.nextFloat() < 0.25) {
         			portas.get(j).setLocked(true);
-        		}else {
+        		} else {
         			portas.get(j).setLocked(false);
         		}
         	}

@@ -36,7 +36,6 @@ public class Sala {
         if (index >= 0 && index < portas.size() && this.portas.get(index).getLocked()) {
              return this.portas.get(index).proximaSala(sala);
         } else {
-        	
             return sala;
         }
     }
